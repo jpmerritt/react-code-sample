@@ -1,0 +1,73 @@
+@import "variables";
+@import "normalize";
+
+
+/**
+ * Fonts
+*/
+@font-face {
+  font-family: "icomoon";
+  src: url( "/assets/fonts/icomoon/icomoon.woff" ) format( "woff" );
+}
+
+html {
+	height: 100%;
+	position: relative;
+}
+
+body {
+	position: relative;
+	height: 100%;
+	display: flex;
+	font-size: 14px;
+	line-height: 20px;
+	overflow-x: hidden;
+}
+
+
+:global {
+	.reactApp {
+		position: relative;
+		height: 100%;
+		flex: 1 1 0;
+		display: flex;
+	}
+
+	.wrapper {
+		position: relative;
+		height: 100%;
+		flex: 1 1 0;
+		display: flex;
+	}
+
+	.hidden {
+		display: none !important;
+	}
+
+	.componentBackdrop {
+		cursor: default;
+		position: fixed;
+		left: 0px;
+		right: 0px;
+		top: 0px;
+		bottom: 0px;
+		background-color: transparent;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

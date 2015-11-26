@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+    <head>
+        <!-- browser settings -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name='apple-mobile-web-app-capable' content='yes'>
+        <meta name='apple-mobile-web-app-status-bar-style' content='black'>
+        <!-- SEO -->
+        <title>App</title>
+        <meta name="description" content="">
+        <meta name="author" content="jpmerritt">
+        <meta canonical="">
+        <link rel="shortcut icon apple-touch-icon" type="image/png" href="" />
+        <% if ( environment === "production" ) { %>
+            <!-- compiled css for proudction, dev uses inline for hot reloading -->
+            <link rel="stylesheet" href="/build/style.css">
+        <% } %>
+    </head>
+    <body>
+      <div class="reactApp"></div>
+
+      <!-- js -->
+      <% if ( environment === "production" ) { %>
+          <!-- app bundle served in production -->
+          <script src="/build/vendors.js"></script>
+          <script src="/build/bundle.js"></script>
+      <% } %>
+      <% if ( environment === "development" ) { %>
+          <!-- webpack hot-reloading for dev only -->
+          <script src="http://localhost:3000/webpack-dev-server.js"></script>
+          <script src="http://localhost:3000/build/bundle.js"></script>
+      <% } %>
+    </body>
+</html>

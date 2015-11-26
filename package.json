@@ -1,0 +1,49 @@
+{
+  "name": "react-code-sample",
+  "version": "0.0.1",
+  "main": "start.js",
+  "private": true,
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon -w start.js -w server -w front/views/index.html -w config/webpack-dev-server.js -w config/webpack-dev.config.js start.js",
+    "build-dev": "NODE_ENV=development nodemon -w config/webpack-dev-server.js -w config/webpack-dev.config.js config/webpack-dev-server.js",
+    "production": "NODE_ENV=production node start.js",
+    "build": "NODE_ENV=production webpack --colors --config config/webpack-production.config.js"
+  },
+  "dependencies": {
+    "classnames": "^2.2.0",
+    "history": "^1.13.1",
+    "koa": "^1.1.2",
+    "koa-router": "5.1.1",
+    "koa-send": "^3.1.0",
+    "lodash": "^3.10.1",
+    "moment": "^2.10.6",
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2",
+    "react-redux": "^4.0.0",
+    "react-router": "^1.0.0",
+    "redux": "^3.0.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.1.0",
+    "babel-core": "^6.1.21",
+    "babel-eslint": "^4.1.5",
+    "babel-loader": "^6.1.0",
+    "babel-plugin-transform-runtime": "^6.1.18",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "css-loader": "^0.23.0",
+    "eslint": "^1.9.0",
+    "eslint-plugin-react": "^3.8.0",
+    "extract-text-webpack-plugin": "^0.9.1",
+    "json-loader": "^0.5.3",
+    "jsx-loader": "^0.13.2",
+    "node-sass": "^3.4.2",
+    "postcss-loader": "^0.8.0",
+    "react-hot-loader": "^1.3.0",
+    "redux-devtools": "^2.1.5",
+    "sass-loader": "^3.1.1",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.6",
+    "webpack-dev-server": "^1.14.0"
+  }
+}

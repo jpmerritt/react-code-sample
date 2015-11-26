@@ -1,0 +1,76 @@
+
+.selectWrapper {
+	position: relative;
+	flex: 0 0 200px;
+	display: flex;
+}
+
+.select {
+	flex: 0 0 100%;
+	display: flex;
+	position: relative;
+	border: 1px solid grey;
+	height: 28px;
+	align-items: center;
+	cursor: pointer;
+	background-color: white;
+}
+
+.selection {
+	flex: 1 1 auto;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	user-select: none;
+}
+
+.selectIcon {
+	flex: 0 0 10px;
+	font-family: icomoon;
+	line-height: 28px;
+	margin-right: 10px;
+}
+
+.options {
+	position: absolute;
+	display: flex;
+	left: 0px;
+	right: 0px;
+	top: 30px;
+	flex-flow: row wrap;
+	border: 1px solid grey;
+	cursor: default;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	overflow: scroll;
+	max-height: 140px;
+	background-color: white;
+}
+
+.option {
+	flex: 0 0 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 24px;
+	line-height: 24px;
+	user-select: none;
+}
+
+.option.selected {
+	background-color: #B0BEC5;
+	color: #E3F2FD;
+}
+
+.option:hover {
+	background-color: #607D8B;
+	color: #E3F2FD;
+}
+
+
+
+
+
+
+
